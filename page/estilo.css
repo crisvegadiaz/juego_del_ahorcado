@@ -1,0 +1,308 @@
+/* Paleta de colores */
+:root {
+  --color-1: #f3edd3;
+  --color-2: #1a324a;
+  --color-3: #12596b;
+  --color-4: #fdb640;
+  --color-5: #f68332;
+  --color-6: #ffffff;
+}
+@font-face {
+  font-family: "Texas";
+  src: url(fonts/Texaz-gxXAq.ttf);
+}
+
+body {
+  background-image: url(img/vecteezy_wild-west-modern-minimal-flat-background_.jpg);
+  background-color: var(--color-2);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ocultar {
+  display: none;
+}
+
+header img {
+  margin: 40px 84px 0;
+}
+
+#flex-container {
+  padding: 20px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* inicio */
+main #inicio button {
+  display: block;
+  margin: 3rem auto;
+  background: var(--color-1);
+  color: var(--color-2);
+  font-size: 30px;
+  font-family: Texas;
+  font-weight: bold;
+  border: solid 2px var(--color-2);
+  border-radius: 20px;
+  padding: 24px;
+  transition: 1s all;
+  cursor: pointer;
+}
+main #inicio button:hover {
+  background-color: var(--color-4);
+  transform: scale(1.1);
+}
+main #inicio .inicio {
+  margin: 15rem 0 0 0;
+  width: 317px;
+  height: 114px;
+}
+main #inicio .agregar {
+  width: 280px;
+  height: 100px;
+}
+
+/* Agregar Palabra */
+
+main #agregar_palabra input {
+  margin: 15rem auto;
+  display: block;
+  width: 45rem;
+  height: 100px;
+  background: var(--color-1);
+  border: solid 2px var(--color-2);
+  border-radius: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  font-family: Texas;
+  text-align: center;
+}
+main #agregar_palabra input::placeholder {
+  color: var(--color-5);
+  text-align: center;
+  font-weight: bold;
+}
+main #agregar_palabra button {
+  margin: 0 1rem;
+  padding: 24px;
+  width: 332px;
+  height: 67px;
+  border: solid 2px var(--color-2);
+  border-radius: 20px;
+  background: var(--color-1);
+  color: var(--color-2);
+  font-size: 30px;
+  font-family: Texas;
+  font-weight: bold;
+  transition: 1s all;
+}
+main #agregar_palabra button:hover {
+  background-color: var(--color-4);
+  transform: scale(1.1);
+}
+
+/* Juego */
+
+main #juego article svg {
+  display: block;
+  margin: 3rem auto;
+}
+main #juego article svg rect,
+path {
+  visibility: collapse;
+}
+
+main #juego article ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 1rem auto;
+  max-width: 100%;
+}
+main #juego article .aciertos .carta_oculta {
+  display: inline;
+  margin: 2rem 2rem;
+  background-image: url(img/flower-butterfly-pattern-publicdomain.jpg);
+  width: 40px;
+  height: 70px;
+  padding: 10px;
+  border: solid 5px white;
+  outline: solid 2px var(--color-2);
+  border-radius: 10px;
+  font-size: 45px;
+  font-family: Texas;
+  text-align: center;
+  line-height: 70px;
+  color: white;
+}
+main #juego article .aciertos .letra {
+  display: inline;
+  margin: 2rem 2rem;
+  background-color: var(--color-6);
+  width: 40px;
+  height: 70px;
+  padding: 10px;
+  border: solid 5px var(--color-6);
+  outline: solid 2px var(--color-2);
+  border-radius: 10px;
+  font-size: 45px;
+  font-family: Texas;
+  text-decoration: underline;
+  text-align: center;
+  font-weight: bold;
+  line-height: 70px;
+  color: var(--color-2);
+}
+
+main #juego article .errores .carta_oculta {
+  display: inline;
+  margin: 2rem 1rem;
+  background: linear-gradient(0deg, var(--color-2), var(--color-4));
+  width: 40px;
+  height: 70px;
+  padding: 5px;
+  border: solid 5px var(--color-6);
+  outline: solid 2px var(--color-2);
+  border-radius: 10px;
+  font-size: 30px;
+  font-family: Texas;
+  text-align: center;
+  line-height: 70px;
+  color: var(--color-6);
+}
+main #juego article .errores .letra {
+  display: inline;
+  margin: 2rem 1rem;
+  background-color: var(--color-6);
+  width: 40px;
+  height: 70px;
+  padding: 5px;
+  border: solid 5px var(--color-6);
+  outline: solid 2px var(--color-2);
+  border-radius: 10px;
+  font-size: 45px;
+  font-family: Texas;
+  text-decoration: underline;
+  text-align: center;
+  font-weight: bold;
+  line-height: 70px;
+  color: red;
+}
+
+main #juego article footer {
+  display: block;
+  margin: 3rem auto;
+  width: 724px;
+}
+main #juego article button {
+  margin: 0 auto;
+  padding: 24px;
+  width: 332px;
+  height: 67px;
+  border: solid 2px var(--color-2);
+  border-radius: 20px;
+  background: var(--color-1);
+  color: var(--color-2);
+  font-size: 30px;
+  font-family: Texas;
+  font-weight: bold;
+  transition: 1s all;
+}
+main #juego article button:hover {
+  background-color: var(--color-4);
+  transform: scale(1.1);
+}
+main #juego article footer .desistir {
+  float: right;
+}
+
+/* Ajuste para tables */
+
+@media screen and (max-width: 1200px) {
+  /* Agregar Palabra */
+  main #agregar_palabra input {
+    max-width: 36rem;
+  }
+  main #agregar_palabra button {
+    margin: auto auto;
+    max-width: 300px;
+  }
+  /* Juego */
+  main #juego article ul {
+    flex-flow: row wrap;
+  }
+
+  main #juego article .aciertos .carta_oculta {
+    margin: 1rem 0.3rem;
+    width: 30px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 35px;
+    padding: 5px;
+  }
+  main #juego article .aciertos .letra {
+    margin: 1rem 0.3rem;
+    width: 30px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 35px;
+    padding: 5px;
+  }
+  main #juego article .errores .carta_oculta {
+    margin: 1rem 0.3rem;
+    width: 30px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 25px;
+  }
+  main #juego article .errores .letra {
+    margin: 1rem 0.3rem;
+    width: 30px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 35px;
+  }
+
+  main #juego article footer {
+    max-width: 600px;
+  }
+  main #juego article button {
+    margin: auto auto;
+    max-width: 300px;
+  }
+}
+
+/* Ajustes para telefonos */
+
+@media screen and (max-width: 763px) {
+  /* Agregar Palabra */
+  main #agregar_palabra input {
+    margin: 10rem auto;
+    max-width: 20rem;
+  }
+  main #agregar_palabra button {
+    margin: 0 auto 2rem;
+    display: block;
+    max-width: 300px;
+  }
+
+  /* Juego */
+
+  main #juego article svg {
+    margin: 1rem auto;
+  }
+  main #juego article footer {
+    width: 350px;
+  }
+  main #juego article button {
+    margin: 1rem auto;
+    display: block;
+  }
+  main #juego article footer .desistir {
+    float: none;
+  }
+}

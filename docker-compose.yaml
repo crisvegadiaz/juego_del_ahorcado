@@ -6,4 +6,4 @@ services:
     ports:
       - "9090:80"
     volumes:
-      - /home/cristian/juego_del_ahorcado:/usr/share/nginx/html:ro
+      - ./page:/usr/share/nginx/html:Z
